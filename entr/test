@@ -1,0 +1,5 @@
+#!/bin/sh
+while true; do
+    while ! test -e test; do sleep 1; done
+    echo test | entr ./test
+done
